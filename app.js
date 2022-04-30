@@ -7,6 +7,7 @@ var cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var adminRouter = require('./routes/admin');
 
 // TODO: import more routes here
 // Page routes
@@ -36,8 +37,6 @@ var corsOptions = {
 var app = express();
 app.use(cors(corsOptions));
 
-
-
 // view engine setup
 // app.set('view engine', 'jade');
 
@@ -56,6 +55,8 @@ app.set('view engine', 'html');
 // Page routes
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+// app.use('/club', club);
+app.use('/admin', adminRouter);
 
 var club = {'name': 'test'}
 

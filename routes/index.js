@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.sendFile(path.join(__dirname, '../public/pages/index.html'));
+  res.sendFile(path.join(__dirname, '../'));
 });
 
 router.get('/stylesheet', function(req, res, next) {
@@ -12,15 +12,19 @@ router.get('/stylesheet', function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-  res.sendFile(path.join(__dirname, '../public/pages/login.html'));
+  res.sendFile(path.join(__dirname, '../login.html'));
 });
 
 router.get('/register', function(req, res, next) {
-  res.sendFile(path.join(__dirname, '../public/pages/register.html'));
+  res.sendFile(path.join(__dirname, '../register.html'));
 });
 
 router.get('/admin', function(req, res, next) {
-  res.sendFile(path.join(__dirname, '../public/pages/admin.html'));
+  res.sendFile(path.join(__dirname, '../admin.html'));
+});
+
+router.get('/groups', function(req, res, next) {
+  res.sendFile(path.join(__dirname, '../groups.html'));
 });
 
 module.exports = router;
