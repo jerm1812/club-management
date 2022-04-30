@@ -23,8 +23,4 @@ router.get('/admin', function(req, res, next) {
   res.sendFile(path.join(__dirname, '../public/pages/admin.html'));
 });
 
-router.get('/groups', function(req, res, next) {
-  res.sendFile(path.join(__dirname, '../public/pages/groups.html'));
-});
-
 module.exports = router;
