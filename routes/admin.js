@@ -1,12 +1,11 @@
 var express = require('express');
-const { path } = require('../app');
 var router = express.Router();
 
-/* GET home page. */
+var club = {'name': 'test'}
+
 router.get('/club', function(req, res, next) {
-  res.send('index.html', {
-    root: path.join(__dirname, './')
-  });
+  console.log(req)
+  res.send(club);
 });
 
 module.exports = router;
