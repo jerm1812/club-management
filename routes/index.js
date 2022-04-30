@@ -20,7 +20,12 @@ router.get('/register', function(req, res, next) {
 });
 
 router.get('/admin', function(req, res, next) {
+  console.log(path.join(__dirname, '../public/pages/admin.html'));
   res.sendFile(path.join(__dirname, '../public/pages/admin.html'));
+});
+
+router.get('/groups', function(req, res, next) {
+  res.sendFile(path.join(__dirname, '../public/pages/groups.html'));
 });
 
 module.exports = router;
