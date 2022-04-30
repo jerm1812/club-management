@@ -12,19 +12,20 @@ router.get('/stylesheet', function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-  res.sendFile(path.join(__dirname, '../login.html'));
+  res.sendFile(path.join(__dirname, '../public/pages/login.html'));
 });
 
 router.get('/register', function(req, res, next) {
-  res.sendFile(path.join(__dirname, '../register.html'));
+  res.sendFile(path.join(__dirname, '../public/pages/register.html'));
 });
 
 router.get('/admin', function(req, res, next) {
-  res.sendFile(path.join(__dirname, '../admin.html'));
+  console.log(path.join(__dirname, '../public/pages/admin.html'));
+  res.sendFile(path.join(__dirname, '../public/pages/admin.html'));
 });
 
 router.get('/groups', function(req, res, next) {
-  res.sendFile(path.join(__dirname, '../groups.html'));
+  res.sendFile(path.join(__dirname, '../public/pages/groups.html'));
 });
 
 module.exports = router;
