@@ -2,6 +2,7 @@
 ## Getting Started
 First of all you will need to download several things.
 
+- https://git-scm.com/downloads
 - https://code.visualstudio.com/Download
 - https://nodejs.org/en/download/
 
